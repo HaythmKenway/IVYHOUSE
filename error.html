@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivyhouse</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <script>
+            function makeid(length) {
+            var result           = [];
+            var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for ( var i = 0; i < length; i++ ) {
+              result.push(characters.charAt(Math.floor(Math.random() * 
+         charactersLength)));
+           }
+           return result.join('');
+        }</script>
+        <style type="text/css" media="all">
+            *,
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            body {
+                background-color: black;
+                font-family: 'Fira Mono', monospace;
+                color: #00EB25;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .welcome {
+                display: block;
+                max-width: 800px;
+                font-size: 30px;
+                padding: 10px 25px;
+                border: 3px solid #00EB25;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 15px;
+                margin-bottom: 20px;
+            }
+
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+
+            .link {
+                text-decoration: none;
+                color: #00EB25;
+                font-weight: 700;
+                padding: 5px 10px;
+                margin: 5px;
+                border-radius: 5px;
+                transition: 0.2s;
+            }
+
+            .link:hover {
+                background-color: #00EB25;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="welcome">Penetration Detected Action Reported!!!!</h1>
+        <div class="links">
+            <p class="link">log id :<script>document.write(makeid(30))</script> </p> 
+               
+        </div>
+    </body>
+</html>
+
+
+
